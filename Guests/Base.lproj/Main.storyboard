@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BJQ-yf-P0g">
+                                <rect key="frame" x="300" y="352" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hhS-mB-kkN"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UMO-cZ-1Wp">
+                                <rect key="frame" x="300" y="456" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0br-nG-FXA"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysC-J0-xmI">
+                                <rect key="frame" x="20" y="356" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkG-A0-jsj">
+                                <rect key="frame" x="184" y="356" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yo-Tu-fG2">
+                                <rect key="frame" x="20" y="460" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-l0-KTV">
+                                <rect key="frame" x="176.5" y="460" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UMO-cZ-1Wp" firstAttribute="top" secondItem="BJQ-yf-P0g" secondAttribute="bottom" constant="75" id="0yq-ud-FgJ"/>
+                            <constraint firstItem="0Yo-Tu-fG2" firstAttribute="centerY" secondItem="UMO-cZ-1Wp" secondAttribute="centerY" id="86O-4h-Lg6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Yo-Tu-fG2" secondAttribute="bottom" constant="381" id="Cmu-Ef-Y5s"/>
+                            <constraint firstItem="0Yo-Tu-fG2" firstAttribute="baseline" secondItem="dFY-l0-KTV" secondAttribute="baseline" id="DgB-9Z-jpA"/>
+                            <constraint firstItem="GkG-A0-jsj" firstAttribute="centerX" secondItem="dFY-l0-KTV" secondAttribute="centerX" id="HSg-Qf-OvS"/>
+                            <constraint firstItem="BJQ-yf-P0g" firstAttribute="leading" secondItem="GkG-A0-jsj" secondAttribute="trailing" constant="67" id="LMq-mD-y1Y"/>
+                            <constraint firstItem="dFY-l0-KTV" firstAttribute="leading" secondItem="0Yo-Tu-fG2" secondAttribute="trailing" constant="83" id="N0P-4U-EWP"/>
+                            <constraint firstItem="UMO-cZ-1Wp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Rhl-UH-9HN"/>
+                            <constraint firstItem="GkG-A0-jsj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ysC-J0-xmI" secondAttribute="trailing" constant="8" symbolic="YES" id="ZZV-xu-38Q"/>
+                            <constraint firstItem="0Yo-Tu-fG2" firstAttribute="top" secondItem="ysC-J0-xmI" secondAttribute="bottom" constant="83" id="cje-Ky-UEB"/>
+                            <constraint firstItem="GkG-A0-jsj" firstAttribute="baseline" secondItem="ysC-J0-xmI" secondAttribute="baseline" id="kfb-MU-dsG"/>
+                            <constraint firstItem="UMO-cZ-1Wp" firstAttribute="leading" secondItem="BJQ-yf-P0g" secondAttribute="leading" id="qez-46-G75"/>
+                            <constraint firstItem="0Yo-Tu-fG2" firstAttribute="leading" secondItem="ysC-J0-xmI" secondAttribute="leading" id="tE6-rf-Cxi"/>
+                            <constraint firstItem="0Yo-Tu-fG2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uIz-2s-VVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfAdultsLabel" destination="ysC-J0-xmI" id="Ynw-XL-mh8"/>
+                        <outlet property="numberOfAdultsStepper" destination="BJQ-yf-P0g" id="6vy-Nt-Slz"/>
+                        <outlet property="numberOfChildrenStepper" destination="UMO-cZ-1Wp" id="rmT-2R-SNq"/>
+                        <outlet property="numberofChildrenLabel" destination="0Yo-Tu-fG2" id="maC-QB-jkj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
